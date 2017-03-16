@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script>
+
+  $.ajax({
+    type: "GET", 
+    url: "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA1iG2lpT4TM8UwWMUrlnYXCoyJyTKD6kQ
+"
+    dataType: "xml", 
+    success: processXML
+  });
+
+  function processXML(xml) {
+
+    alert($(xml).find("status").text());
+
+  }
+
+  </script>
+
+  </body>
+</html>
+
+https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyA1iG2lpT4TM8UwWMUrlnYXCoyJyTKD6kQ
+

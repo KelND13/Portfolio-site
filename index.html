@@ -17,11 +17,11 @@ bootstrap-theme.min.css">
    
    <style type="text/css">
    
-    body {
+    #body {
     	background-color:#000000;
     }
    
-   #name {
+   #about {
      font-family: Helvetica;
      font-size:150%;
      padding:10px;
@@ -41,112 +41,74 @@ bootstrap-theme.min.css">
    }
    
    #portrait {
-    width:250px;
-    height:250px;
-    float:left;
-    border-radius:50%;
-    padding:20px;
-  }
-   
-   .my-title {
-     border-radius:150px;
-     font-family: Helvetica;
-     color:#FFFFFF;
-   }
-   
-    
-    .web-stuff {
-        font-family: Helvetica;    
-        background-color:#000000;
-        border-width:5px;
-        height:400px;
-        width:400px;
-        float:left;
-        border-radius:40px;
-        color:#FFFFFF;
-        margin-right:170px;
-        margin-left:110px;
-        padding:10px;
-        
-        }
+      width:250px;
+      height:250px;
+      float:left;
+      border-radius:50%;
+      padding:20px;
+    }
     
     #menu {
-        float:right;
-        position:relative;
-        padding-right:50px;
-        z-index:1;
-        padding-top:10px;
-        font-size:350%
-        font-family: Helvetica;
-        }
+      float:right;
+      position:relative;
+      padding-right:50px;
+      z-index:1;
+      padding-top:10px;
+      font-size:350%
+      font-family:Helvetica;
+    }
 
     .projects {
-      	background-color:#000000;
-        padding-bottom: 10px;
-        padding-top: 10px;
-      }
+      background-color:#000000;
+      padding:10px;
+      border-radius:5px;
+    }
    
     
     #project-one {
-        width:300px;
-        height:300px;
-        float:left;
-        margin:30px;
-      }
+      width:300px;
+      height:300px;
+      float:left;
+      margin:30px;
+    }
         
     #project-two {
-        width:300px;
-        height:300px;
-        float:left;
-        margin:30px;
-      }
+      width:300px;
+      height:300px;
+      float:left;
+      margin:30px;
+    }
 
-    #git-image {
-        border-radius:50%;
-      }
+    .circle-image {
+      border-radius:50%;
+    }
     
     #project-three {
-        width:300px;
-        height:300px;
-        float:left;
-        margin:30px;
-      }
+      width:300px;
+      height:300px;
+      float:left;
+      margin:30px;
+    }
 
     #project-four {
-        width:300px;
-        height:300px;
-        float:left;
-        margin:30px;
-      }
-
-    #udemy-image {
-      border-radius:50%;
+      width:300px;
+      height:300px;
+      float:left;
+      margin:30px;
     }
-
-    #weather {
-      border-radius:50%;
-    }
-
    
    #projects {
       font-family: Helvetica;
       color:#FFFFFF;
     }
 
-    .contact {
-     font-family: Helvetica;
-     color:#FFFFFF;
-     border-radius:5px;
-     background-color:#000000;
-     padding-bottom: 10px;
-     padding-top: 10px;
-    }
-
-    .names {
-     font-family: Helvetica;
-     color:#FFFFFF;
-     background-color:#000000;
-     float:left;
+    #contact {
+       font-family: Helvetica;
+       color:#FFFFFF;
+       border-radius:5px;
+       background-color:#000000;
+       padding:10px;
+       border-radius:5px;
     }
 
     .btns {
@@ -170,31 +132,27 @@ bootstrap-theme.min.css">
       float:left;
     }
 
-    .btns4 {
-      float:left;
-    }
-
     .glyphicon {
       font-size: 80px;
     }
 
     h1 {
       font-family:Helvetica;
+      color:#FFFFFF;
     }
 
     h3 {
       font-family:Helvetica;
       text-align:center;
       margin:10px;
-    }
-
-    #inputlg {
-      length:200px;
+      color:#FFFFFF;
     }
     
    </style>
    
 </head>
+
+<div id="body">
 
 <body data-spy="scroll" data-target="navbar-collapse">
 
@@ -241,16 +199,17 @@ bootstrap-theme.min.css">
 <a name="about"></a>
 <br />
 <br />
-<br />
-<br />
 
-<div class="container">
+<div class="container" id="about">
 
-<div id="name">
 <h1>About:</h1>
+
+<div>
     <div id="title"><h4>Kelly Dickerson is a software engineer with experience in HTML, CSS, JavaScript, JQuery, Bootstrap, Python, and iOS mobile development with Swift. </h4></div> 
 
-    <div id="img-wrap"><img id="portrait" src="port.jpg" /></div><div class="button btns1">
+    <div id="img-wrap"><img id="portrait" src="images/port.jpg" /></div>
+
+    <div class="button btns1">
       <form action="https://twitter.com/coding_kelly">
         <input type="submit" value="Twitter" class="btn btn-info btns"/>
       </form>
@@ -277,64 +236,32 @@ bootstrap-theme.min.css">
 <br />
 <br />
 <br />
-<br />
-<br />
 
-<hr />
-<hr />
 <div class="container projects">
 <h1 id="projects">Projects:</h1>
 
     <div id="project-four">
-      <img id="weather" src="weather.jpg" width="300" height="300" />
+      <img class="circle-image" src="images/weather.jpg" width="300" height="300" />
       <h3><a href="http://kellydickerson.me/php_projects/weather-site.php">Weather application</a></h3>
     </div>
 
-    <div id="project-one">
-      <img src="record.jpg" width="300" height="300" />
-      <h3>David Bowie <a href="http://codepen.io/kellynd13/pen/LZVqXX">tribute page</a></h3>
-    </div>
-
     <div id="project-two">
-     <img id="git-image" src="green-circle.jpg" width="300" height="300" />
+     <img class="circle-image" src="images/Octocat.jpg" width="300" height="300" />
      <h3 id="git">My Github <a href="https://github.com/KelND13">page</a><h3>
     </div>
 
     <div id="project-three">
-    <img id="udemy-image" src="udemy.jpg" width="300" height="300" />
-      <h3>Full-Stack <a href="https://www.udemy.com/home/my-courses/learning/">course</a></h3>
+    <img class="circle-image" src="images/green-circle.jpg" width="300" height="300" />
+      <h3>Treehouse <a href="https://teamtreehouse.com/kellydickerson">courses</a></h3>
     </div>
 
-</div>
-
-<div class="container">
-
-<div id="bylines">
-<h1>Bylines:</h1>
-
-    <div id="byline-one">
-      <img src="record.jpg" width="300" height="300" />
-      <h3>David Bowie <a href="http://codepen.io/kellynd13/pen/LZVqXX">tribute page</a></h3>
-    </div>
-
-    <div id="byline-two">
-     <img id="git-image" src="green-circle.jpg" width="300" height="300" />
-     <h3 id="git">My Github <a href="https://github.com/KelND13">page</a><h3>
-    </div>
-
-    <div id="byline-three">
-    <img id="udemy-image" src="udemy.jpg" width="300" height="300" />
-      <h3>Full-Stack <a href="https://www.udemy.com/home/my-courses/learning/">course</a></h3>
-    </div>
-
-</div>
 </div>
 
 <a name="contact"></a>
 <br /><br />
 <br /><br />
     
-<div class="container contact">  
+<div class="container" id="contact">  
 <div class="row">
 <div class="col-md-6">
 
@@ -377,11 +304,11 @@ bootstrap-theme.min.css">
 <br />
 <br />
 <br />
-<br />
-<br />
+<br /><br /><br /><br />
+<br /><br />
 
 
-
+</div>
 </body>
 
 </html>
