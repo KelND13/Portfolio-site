@@ -44,7 +44,7 @@
     }
 
     #menu {
-      height:100px;
+      height:300px;
       width:100%;
     }
 
@@ -55,38 +55,30 @@
       animation-duration: 1.0s;
       font-family: Helvetica bold;
       font-style: italic;
+      font-size: 200%;
       color: #FFFFFF;
+      width: 100%;
+      text-align: center;
     }
 
    #about {
-     font-family: Helvetica;
-     font-size:150%;
+    margin-top:200px;
      margin-bottom:30px;
-     color:#FFFFFF;
      float:left;
-     width:100%;
    }
 
    #title {
+      font-family: Helvetica;
+      font-size:150%;
       float:left;
-      margin:10px;
+      padding:30px;
       font:Helvetica;
       color:#FFFFFF;
    }
 
-   #portrait {
-      width:250px;
-      height:250px;
-      float:left;
-      border-radius:50%;
-      padding:20px;
-      margin-right:40px;
-    }
-
     .social-media {
       float:left;
-      margin-top:70px;
-      margin-bottom:20px;
+      padding:30px;
     }
 
     #twitter {
@@ -114,7 +106,7 @@
     .projects {
       float:left;
       margin:30px;
-      margin-bottom:100px;
+      margin-bottom:200px;
     }
 
     #project {
@@ -124,16 +116,14 @@
       margin:30px;
     }
 
-    .circle-image {
-      border-radius:50%;
-    }
-
     #contact {
        font-family: Helvetica;
        color:#FFFFFF;
        background-color:#000000;
        float:left;
        width:100%;
+      vertical-align: center;
+      padding:200px;
     }
 
     .glyphicon {
@@ -162,6 +152,10 @@
       margin:10px;
     }
 
+    .white {
+      color: #fff;
+    }
+
    </style>
 
 </head>
@@ -179,14 +173,8 @@
 <div class="container parallax" id="about">
 
 <div id="title">
-    <h4>About:</h4>
     <h5>Kelly is a software engineer with experience in HTML, CSS, JavaScript, JQuery, Bootstrap, Python, and iOS mobile development with Swift.</h5>
 </div>
-
-<div>
-  <img id="portrait" src="images/port.jpg" />
-</div>
-
 <div class="social-media">
     <a href="https://twitter.com/Kickerson13">
       <img id="twitter" src="images/twitter.png" />
@@ -220,27 +208,44 @@
       <a href="https://github.com/KelND13">
         <img class="circle-image" src="images/Octocat.jpg" width="300" height="300" />
       </a>
-     <h5 id="git" class="project-text">My Github <a href="https://github.com/KelND13">page</a><h5>
+     <h5 id="git" class="project-text"><a href="https://github.com/KelND13">Github</a><h5>
     </div>
 
     <div id="project">
       <a href="https://teamtreehouse.com/kellydickerson">
         <img class="circle-image" src="images/green-circle.jpg" width="300" height="300" />
       </a>
-      <h5 class="project-text">Treehouse <a href="https://teamtreehouse.com/kellydickerson">courses</a></h5>
+      <h5 class="project-text"><a href="https://teamtreehouse.com/kellydickerson">Treehouse</a></h5>
+    </div>
+
+    <div id="project">
+      <a href="http://kellydickerson.me/php_projects/weather-site.php">
+        <img class="circle-image" src="images/weather.jpg" width="300" height="300" />
+      </a>
+      <h5 class="project-text"><a href="http://kellydickerson.me/php_projects/weather-site.php">Weather application</a></h5>
+    </div>
+
+    <div id="project">
+      <a href="https://github.com/KelND13">
+        <img class="circle-image" src="images/Octocat.jpg" width="300" height="300" />
+      </a>
+     <h5 id="git" class="project-text"><a href="https://github.com/KelND13">Github</a><h5>
+    </div>
+
+    <div id="project">
+      <a href="https://teamtreehouse.com/kellydickerson">
+        <img class="circle-image" src="images/green-circle.jpg" width="300" height="300" />
+      </a>
+      <h5 class="project-text"><a href="https://teamtreehouse.com/kellydickerson">Treehouse</a></h5>
     </div>
 
 </div>
 
-<br /><br />
-<br /><br />
-
 <div class="container parallax" id="contact">
-<div class="row">
-<div class="col-md-6">
+
 
 <div>
-<span class="glyphicon glyphicon-envelope large"><h4 style="display:inline-block; vertical-align:middle; white-space:nowrap; font-family:Helvetica; margin:10px;">Get in touch:</h4></span>
+<span class="glyphicon glyphicon-envelope glyphicon-inverse large"><h4 style="display:inline-block; vertical-align:middle; white-space:nowrap; font-family:Helvetica; margin:10px;">Get in touch:</h4></span>
 
 
 
