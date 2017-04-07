@@ -10,25 +10,20 @@
 
    <!--Bootstrap styling: -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
    <style type="text/css">
 
   @-webkit-keyframes tracking-in-expand {
     0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}
   }
-
     body {
       background-color:#000000;
     }
-
     .parallax {
     /* The image used */
       background-image: url("images/background.jpg");
-
     /* Set a specific height */
-      height: 600px;
-
+      height: 1000px;
     /* Create the parallax scrolling effect */
       background-attachment: fixed;
       background-position: center;
@@ -36,126 +31,136 @@
       background-size: cover;
       background-speed: 0;
     }
-
     @media only screen and (max-device-width: 1024px) {
       .parallax {
         background-attachment: scroll;
       }
     }
-
     #menu {
       height:300px;
       width:100%;
     }
-
     #header {
       float:left;
       margin-bottom: 50px;
       animation-name: tracking-in-expand;
-      animation-duration: 1.0s;
-      font-family: Helvetica bold;
-      font-style: italic;
+      animation-duration: 1.2s;
+      width: 100%;
+      font-family: Helvetica;
+    }
+    .text {
+      font-family: Helvetica;
       font-size: 200%;
       color: #FFFFFF;
-      width: 100%;
-      text-align: center;
+      position: relative;
+      float: left;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-
    #about {
     margin-top:200px;
-     margin-bottom:30px;
-     float:left;
+    margin-bottom:30px;
+    float:left;
    }
-
    #title {
       font-family: Helvetica;
-      font-size:150%;
-      float:left;
-      padding:30px;
-      font:Helvetica;
-      color:#FFFFFF;
+      color: #FFFFFF;
+      position: relative;
+      float: left;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
    }
-
-    .social-media {
-      float:left;
-      padding:30px;
-    }
-
     #twitter {
       width:60px;
       height:60px;
-      margin:15px;
       border-radius:10px;
       float:left;
+      margin-right:25px;
     }
-
-    #linkedin {
-      margin:15px;
-      border-radius:1px;
-      float:left;
-    }
-
     #github {
       width:60px;
       height:60px;
-      margin:15px;
       border-radius:10px;
       float:left;
+      margin-right:25px;
     }
-
+    #linkedin {
+      width:60px;
+      height:60px;
+      border-radius:10px;
+      float:left;
+      margin-right:25px;
+    }
+    .social-media {
+      margin-right:10px;
+    }
     .projects {
       float:left;
-      margin:30px;
       margin-bottom:200px;
     }
-
-    #project {
-      width:300px;
-      height:300px;
+    .project {
       float:left;
-      margin:30px;
+      margin:20px;
     }
-
+    #biggerOne {
+      height:200px;
+      width:200px;
+    }
+    #biggerTwo {
+      height:200px;
+      width:200px;
+    }
+    #biggerThree {
+      height:200px;
+      width:200px;
+    }
+    #biggerFour {
+      height:200px;
+      width:200px;
+    }
+    #biggerFive {
+      height:200px;
+      width:200px;
+    }
+    #biggerSix {
+      height:200px;
+      width:200px;
+    }
     #contact {
-       font-family: Helvetica;
-       color:#FFFFFF;
-       background-color:#000000;
-       float:left;
-       width:100%;
+      font-family: Helvetica;
+      color:#FFFFFF;
+      background-color:#000000;
+      float:left;
+      width:100%;
       vertical-align: center;
       padding:200px;
     }
-
     .glyphicon {
       font-size: 80px;
     }
-
     h2 {
       font-family:Helvetica;
       color:#FFFFFF;
     }
-
     h4 {
       font-family:Helvetica;
       color:#FFFFFF;
     }
-
     h5 {
       font-family:Helvetica;
       color:#FFFFFF;
     }
-
     .project-text {
       font-family:Helvetica;
       color:#FFFFFF;
       text-align:center;
       margin:10px;
     }
-
     .white {
       color: #fff;
     }
-
    </style>
 
 </head>
@@ -165,26 +170,27 @@
 <div id="menu">
 </div>
 
-<div class="container" id="header">
+<div class="container parallax" id="header">
+  <div class="text">
   <h1>Kelly Dickerson</h1>
-  <h3>Software engineer</h3>
-</div>
-
-<div class="container parallax" id="about">
-
-<div id="title">
-    <h5>Kelly is a software engineer with experience in HTML, CSS, JavaScript, JQuery, Bootstrap, Python, and iOS mobile development with Swift.</h5>
-</div>
-<div class="social-media">
+  <div class="social-media">
     <a href="https://twitter.com/Kickerson13">
       <img id="twitter" src="images/twitter.png" />
     </a>
     <a href="https://github.com/KelND13">
-      <img id="github" src="images/github.png" />
+      <img id="github" class="socialImage" src="images/github.png" />
     </a>
     <a href="https://www.linkedin.com/in/kelly-dickerson-9b043825?trk=nav_responsive_tab_profile_pic">
-      <img id="linkedin" src="images/linkedinb.png" />
+      <img id="linkedin" class="socialImage" src="images/linkedin.jpg" />
     </a>
+</div>
+  </div>
+</div>
+
+<div class="container" id="about">
+
+<div id="title">
+    <h5>Kelly is a software engineer with experience in HTML, CSS, JavaScript + JQuery, Python, and iOS mobile development with Swift.</h5>
 </div>
 
 </div>
@@ -195,53 +201,52 @@
 <br />
 
 <div class="container projects">
-<h4 id="projects">Projects:</h4>
-
-    <div id="project">
+    <div class="project">
       <a href="http://kellydickerson.me/php_projects/weather-site.php">
-        <img class="circle-image" src="images/weather.jpg" width="300" height="300" />
+        <img id="biggerOne" src="images/weather.jpg" />
       </a>
       <h5 class="project-text"><a href="http://kellydickerson.me/php_projects/weather-site.php">Weather application</a></h5>
     </div>
 
-    <div id="project">
+    <div class="project">
       <a href="https://github.com/KelND13">
-        <img class="circle-image" src="images/Octocat.jpg" width="300" height="300" />
+        <img id="biggerTwo" src="images/Octocat.jpg" width="200px" height="200px" />
       </a>
      <h5 id="git" class="project-text"><a href="https://github.com/KelND13">Github</a><h5>
     </div>
 
-    <div id="project">
+    <div class="project">
       <a href="https://teamtreehouse.com/kellydickerson">
-        <img class="circle-image" src="images/green-circle.jpg" width="300" height="300" />
+        <img id="biggerThree" src="images/green-circle.jpg" width="200px" height="200px" />
       </a>
       <h5 class="project-text"><a href="https://teamtreehouse.com/kellydickerson">Treehouse</a></h5>
     </div>
-
-    <div id="project">
+    <div class="project">
       <a href="http://kellydickerson.me/php_projects/weather-site.php">
-        <img class="circle-image" src="images/weather.jpg" width="300" height="300" />
+        <img id="biggerFour" src="images/weather.jpg" width="200px" height="200px" />
       </a>
       <h5 class="project-text"><a href="http://kellydickerson.me/php_projects/weather-site.php">Weather application</a></h5>
     </div>
 
-    <div id="project">
+    <div class="project">
       <a href="https://github.com/KelND13">
-        <img class="circle-image" src="images/Octocat.jpg" width="300" height="300" />
+        <img id="biggerFive" src="images/Octocat.jpg" width="200px" height="200px" />
       </a>
      <h5 id="git" class="project-text"><a href="https://github.com/KelND13">Github</a><h5>
     </div>
 
-    <div id="project">
+    <div class="project">
       <a href="https://teamtreehouse.com/kellydickerson">
-        <img class="circle-image" src="images/green-circle.jpg" width="300" height="300" />
+        <img id="biggerSix" src="images/green-circle.jpg" width="200px" height="200px" />
       </a>
       <h5 class="project-text"><a href="https://teamtreehouse.com/kellydickerson">Treehouse</a></h5>
     </div>
 
 </div>
 
-<div class="container parallax" id="contact">
+<div class="container test" width="200px" height="200px"></div>
+
+<div class="container" id="contact">
 
 
 <div>
@@ -276,9 +281,14 @@
 </div>
 
 </div>
-
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/test.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/website.js"></script>
 </body>
 
 </html>
