@@ -16,8 +16,8 @@ const test = document.querySelector(".test");
 
 biggerOne.addEventListener("mouseover", (event) => {
 	if (event.target.id == "biggerOne") {
-	biggerOne.style.width = "215px";
-	biggerOne.style.height = "215px";
+	biggerOne.style.width = "210px";
+	biggerOne.style.height = "210px";
 	}
 });
 biggerOne.addEventListener("mouseout", () => {
@@ -27,8 +27,8 @@ biggerOne.addEventListener("mouseout", () => {
 
 biggerTwo.addEventListener("mouseover", (event) => {
 	if (event.target.id == "biggerTwo") {
-		biggerTwo.style.width = "215px";
-		biggerTwo.style.height = "215px";
+		biggerTwo.style.width = "210px";
+		biggerTwo.style.height = "210px";
 	}
 });
 biggerTwo.addEventListener("mouseout", () => {
@@ -38,8 +38,8 @@ biggerTwo.addEventListener("mouseout", () => {
 
 biggerThree.addEventListener("mouseover", (event) => {
 	if (event.target.id == "biggerThree") {
-	biggerThree.style.width = "215px";
-	biggerThree.style.height = "215px";
+	biggerThree.style.width = "210px";
+	biggerThree.style.height = "210px";
 	}
 });
 biggerThree.addEventListener("mouseout", () => {
@@ -49,8 +49,8 @@ biggerThree.addEventListener("mouseout", () => {
 
 biggerFour.addEventListener("mouseover", (event) => {
 	if (event.target.id == "biggerFour") {
-	biggerFour.style.width = "215px";
-	biggerFour.style.height = "215px";
+	biggerFour.style.width = "210px";
+	biggerFour.style.height = "210px";
 	}
 });
 biggerFour.addEventListener("mouseout", () => {
@@ -60,8 +60,8 @@ biggerFour.addEventListener("mouseout", () => {
 
 biggerFive.addEventListener("mouseover", (event) => {
 	if (event.target.id == "biggerFive") {
-	biggerFive.style.width = "215px";
-	biggerFive.style.height = "215px";
+	biggerFive.style.width = "210px";
+	biggerFive.style.height = "210px";
 	}
 });
 biggerFive.addEventListener("mouseout", () => {
@@ -71,8 +71,8 @@ biggerFive.addEventListener("mouseout", () => {
 
 biggerSix.addEventListener("mouseover", (event) => {
 	if (event.target.id == "biggerSix") {
-	biggerSix.style.width = "215px";
-	biggerSix.style.height = "215px";
+	biggerSix.style.width = "210px";
+	biggerSix.style.height = "210px";
 	}
 });
 biggerSix.addEventListener("mouseout", () => {
