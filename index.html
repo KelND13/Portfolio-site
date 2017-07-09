@@ -13,48 +13,21 @@
 
    <style type="text/css">
 
-    @-webkit-keyframes tracking-in-expand {
-      0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}
-    }
-    body {
-      background-image: url("images/galaxy3.png");
-    }
-    #menu {
-      height:300px;
-      width:100%;
-    }
-    #header {
-      float:left;
-      margin-bottom: 50px;
-      animation-name: tracking-in-expand;
-      animation-duration: 1.2s;
-      width: 100%;
+    #name {
       font-family: PT Sans;
-    }
-    .text {
-      font-family: PT Sans;
-      font-size: 200%;
-      color: #FFFFFF;
-      position: relative;
+      color: #696969;
+      margin-top: 30px;
+      margin-left: 20px;
       float: left;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      font-size: 20px;
     }
-   #about {
-    margin-top:200px;
-    margin-bottom:30px;
-    float:left;
-   }
-   #title {
+    #title {
       font-family: PT Sans;
-      color: #FFFFFF;
-      position: relative;
-      float: left;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-   }
+      color: #696969;
+      width: 50%;
+      margin: auto;
+      vertical-align: center;
+    }
     #twitter {
       width:60px;
       height:60px;
@@ -76,52 +49,18 @@
       float:left;
       margin-right:40px;
     }
-    .social-media {
-      margin-right:10px;
+    #grid {
+      float:left;
+      width:100%;
+      vertical-align: center;
+      padding:100px;
     }
     .projects {
-      float:left;
-      width:100%;
-      vertical-align: center;
-    }
-    .projectstwo {
-      float:left;
-      width:100%;
-      vertical-align: center;
-    }
-    .project {
-      float:left;
-      margin:20px;
-    }
-    #biggerOne {
-      height:200px;
-      width:200px;
+      height:400px;
+      width:400px;
       border-radius: 5px;
-    }
-    #biggerTwo {
-      height:200px;
-      width:200px;
-      border-radius: 5px;
-    }
-    #biggerThree {
-      height:200px;
-      width:200px;
-      border-radius: 5px;
-    }
-    #biggerFour {
-      height:200px;
-      width:200px;
-      border-radius: 5px;
-    }
-    #biggerFive {
-      height:200px;
-      width:200px;
-      border-radius: 5px;
-    }
-    #biggerSix {
-      height:200px;
-      width:200px;
-      border-radius: 5px;
+      float: left;
+      margin: 25px;
     }
     #contact {
       font-family: PT Sans;
@@ -134,40 +73,69 @@
     .glyphicon {
       font-size: 80px;
     }
-    h2 {
-      font-family: PT Sans;
-      color:#FFFFFF;
-    }
-    h4 {
-      font-family:PT Sans;
-      color:#FFFFFF;
-    }
-    h5 {
-      font-family:PT Sans;
-      color:#FFFFFF;
-    }
-    .project-text {
-      font-family:PT Sans;
-      color:#FFFFFF;
-      text-align:center;
-      margin:10px;
-    }
-    .white {
-      color: #fff;
-    }
    </style>
 
 </head>
 
 <body>
 
-<div id="menu">
+<div class="container" id="name">
+  <div>
+    <p>Kelly Dickerson</p>
+  </div>
 </div>
 
-<div class="container" id="header">
-  <div class="text">
-  <h1>Kelly Dickerson</h1>
-  <div class="social-media">
+<div class="container" id="title">
+  <p id="animate"></p>
+</div>
+
+<div class="container" id="grid">
+
+    <div class="container projects">
+      <a href="http://kellydickerson.me/php_projects/weather-site.php">
+        <img id="biggerOne" src="images/lightning.jpg" height="400" width="400"/>
+      </a>
+      <h5><a href="http://kellydickerson.me/php_projects/weather-site.php">PHP Weather App</a></h5>
+    </div>
+
+    <div class="container projects">
+      <a href="https://github.com/KelND13">
+        <img id="biggerTwo" src="images/whiskey.jpg" height="400" width="400"/>
+      </a>
+     <h5><a href="https://github.com/KelND13/AngelsShareTest">iOS Whiskey App</a><h5>
+    </div>
+
+    <div class="container projects">
+      <a href="https://teamtreehouse.com/kellydickerson">
+        <img id="biggerThree" src="images/python.png" height="400" width="400"/>
+      </a>
+      <h5><a href="https://github.com/KelND13/MyTextAdventure">Text Adventure Game</a></h5>
+    </div>
+
+    <div class="container projects">
+      <a href="http://kellydickerson.me/php_projects/weather-site.php">
+        <img id="biggerFour" src="images/bigrecord.png" height="400" width="400"/>
+      </a>
+      <h5><a href="https://github.com/KelND13/nodeScraper">Node Scraper</a></h5>
+    </div>
+
+    <div class="container projects">
+      <a href="https://github.com/KelND13">
+        <img id="biggerFive" src="images/galaxy.jpg" height="400" width="400"/>
+      </a>
+     <h5><a href="https://github.com/KelND13/quizScraper">Python Web Scraper</a><h5>
+    </div>
+
+    <div class="container projects">
+      <a href="https://teamtreehouse.com/kellydickerson">
+        <img id="biggerSix" src="images/green-circuit.jpg" height="400" width="400"/>
+      </a>
+      <h5><a href="https://teamtreehouse.com/kellydickerson">Treehouse CourseworkK</a></h5>
+    </div>
+
+</div>
+
+<div class="container" "social-media">
     <a href="https://twitter.com/Kickerson13">
       <img id="twitter" src="images/twitter.png" />
     </a>
@@ -177,80 +145,6 @@
     <a href="https://www.linkedin.com/in/kelly-dickerson-9b043825?trk=nav_responsive_tab_profile_pic">
       <img id="linkedin" class="socialImage" src="images/linkedin.jpg" />
     </a>
-</div>
-  </div>
-</div>
-<div class="container" id="about">
-
-<div id="title">
-    <h3>Skills</h3>
-    <div>
-      <p>HTML and CSS</p>
-    </div>
-    <div>
-      <p>JavaScript and JQuery</p>
-    </div>
-    <div>
-      <p>Python</p>
-    </div>
-    <div>
-      <p>iOS mobile development with Swift<p>
-    </div>
-</div>
-
-</div>
-
-<br />
-<br />
-<br />
-<br />
-
-<div class="container projects">
-    <div class="project">
-      <a href="http://kellydickerson.me/php_projects/weather-site.php">
-        <img id="biggerOne" src="images/weather.jpg" />
-      </a>
-      <h5 class="project-text"><a href="http://kellydickerson.me/php_projects/weather-site.php">PHP Weather App</a></h5>
-    </div>
-
-    <div class="project">
-      <a href="https://github.com/KelND13">
-        <img id="biggerTwo" src="images/angelsShareIcon.jpg"/>
-      </a>
-     <h5 id="git" class="project-text"><a href="https://github.com/KelND13/AngelsShareTest">iOS Whiskey App</a><h5>
-    </div>
-
-    <div class="project">
-      <a href="https://teamtreehouse.com/kellydickerson">
-        <img id="biggerThree" src="images/green-circle.jpg"/>
-      </a>
-      <h5 class="project-text"><a href="https://teamtreehouse.com/kellydickerson">Treehouse Coursework</a></h5>
-    </div>
-
-  </div>
-
-  <div class="container projectstwo">
-    <div class="project">
-      <a href="http://kellydickerson.me/php_projects/weather-site.php">
-        <img id="biggerFour" src="images/galaxy.jpg"/>
-      </a>
-      <h5 class="project-text"><a href="http://kellydickerson.me/php_projects/weather-site.php">Text Adventure Game</a></h5>
-    </div>
-
-    <div class="project">
-      <a href="https://github.com/KelND13">
-        <img id="biggerFive" src="images/Octocat.jpg"/>
-      </a>
-     <h5 id="git" class="project-text"><a href="https://github.com/KelND13">Python Web Scraper</a><h5>
-    </div>
-
-    <div class="project">
-      <a href="https://teamtreehouse.com/kellydickerson">
-        <img id="biggerSix" src="images/green-circle.jpg"/>
-      </a>
-      <h5 class="project-text"><a href="https://teamtreehouse.com/kellydickerson">Javascript TK</a></h5>
-    </div>
-
 </div>
 
 
@@ -285,7 +179,6 @@
 
 </div>
 
-</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
   src="http://code.jquery.com/jquery-3.2.1.min.js"
