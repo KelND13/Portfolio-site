@@ -24,9 +24,10 @@
     #title {
       font-family: PT Sans;
       color: #696969;
-      width: 50%;
-      margin: auto;
-      vertical-align: center;
+      margin-top: 30px;
+      margin-left: 20px;
+      float: left;
+      font-size: 18px;
     }
     #twitter {
       width:60px;
@@ -54,6 +55,8 @@
       width:100%;
       vertical-align: center;
       padding:100px;
+      font-family: PT Sans;
+      color: #696969;
     }
     .projects {
       height:400px;
@@ -62,7 +65,13 @@
       float: left;
       margin: 25px;
     }
-    #contact {
+    #project-header: {
+      float:left;
+      width:100%;
+      vertical-align: center;
+      position: relative;
+    }
+    #social-media {
       font-family: PT Sans;
       color:#FFFFFF;
       float:left;
@@ -70,8 +79,13 @@
       vertical-align: center;
       padding:200px;
     }
-    .glyphicon {
-      font-size: 80px;
+    #contact {
+      font-family: PT Sans;
+      color:#FFFFFF;
+      float:left;
+      width:100%;
+      vertical-align: center;
+      padding:200px;
     }
    </style>
 
@@ -89,53 +103,59 @@
   <p id="animate"></p>
 </div>
 
+<div class="container">
+  <p id="project-header">Projects</p>
+</div>
+
 <div class="container" id="grid">
 
     <div class="container projects">
       <a href="http://kellydickerson.me/php_projects/weather-site.php">
-        <img id="biggerOne" src="images/lightning.jpg" height="400" width="400"/>
+        <img id="biggerOne" src="images/lightning.jpg"/>
       </a>
       <h5><a href="http://kellydickerson.me/php_projects/weather-site.php">PHP Weather App</a></h5>
     </div>
 
     <div class="container projects">
       <a href="https://github.com/KelND13">
-        <img id="biggerTwo" src="images/whiskey.jpg" height="400" width="400"/>
+        <img id="biggerTwo" src="images/whiskey.jpg"/>
       </a>
      <h5><a href="https://github.com/KelND13/AngelsShareTest">iOS Whiskey App</a><h5>
     </div>
 
     <div class="container projects">
       <a href="https://teamtreehouse.com/kellydickerson">
-        <img id="biggerThree" src="images/python.png" height="400" width="400"/>
+        <img id="biggerThree" src="images/python.png"/>
       </a>
       <h5><a href="https://github.com/KelND13/MyTextAdventure">Text Adventure Game</a></h5>
     </div>
 
     <div class="container projects">
       <a href="http://kellydickerson.me/php_projects/weather-site.php">
-        <img id="biggerFour" src="images/bigrecord.png" height="400" width="400"/>
+        <img id="biggerFour" src="images/bigrecord.png"/>
       </a>
       <h5><a href="https://github.com/KelND13/nodeScraper">Node Scraper</a></h5>
     </div>
 
     <div class="container projects">
       <a href="https://github.com/KelND13">
-        <img id="biggerFive" src="images/galaxy.jpg" height="400" width="400"/>
+        <img id="biggerFive" src="images/galaxy.jpg"/>
       </a>
      <h5><a href="https://github.com/KelND13/quizScraper">Python Web Scraper</a><h5>
     </div>
 
     <div class="container projects">
       <a href="https://teamtreehouse.com/kellydickerson">
-        <img id="biggerSix" src="images/green-circuit.jpg" height="400" width="400"/>
+        <img id="biggerSix" src="images/green-circuit.jpg"/>
       </a>
       <h5><a href="https://teamtreehouse.com/kellydickerson">Treehouse CourseworkK</a></h5>
     </div>
 
 </div>
 
-<div class="container" "social-media">
+<div class="container" id="social-media">
+
+  <div>
     <a href="https://twitter.com/Kickerson13">
       <img id="twitter" src="images/twitter.png" />
     </a>
@@ -145,15 +165,14 @@
     <a href="https://www.linkedin.com/in/kelly-dickerson-9b043825?trk=nav_responsive_tab_profile_pic">
       <img id="linkedin" class="socialImage" src="images/linkedin.jpg" />
     </a>
+  </div>
+
 </div>
 
 
 <div class="container" id="contact">
 
-<div>
-<span class="glyphicon glyphicon-envelope glyphicon-inverse large"><h4 style="display:inline-block; vertical-align:middle; white-space:nowrap; font-family:Helvetica; margin:10px;">Get in touch:</h4></span>
-
-
+  <div>
 
     <form method="POST" action="contact.php">
 
@@ -173,8 +192,8 @@
 
       <input type="submit" name="submit" class="btn btn-success btn-lg" value="Submit"/>
 
-
     </form>
+
   </div>
 
 </div>
