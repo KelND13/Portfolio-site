@@ -124,7 +124,7 @@ linkedin.addEventListener("mouseout", () => {
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Software engineer.", "Experience in HTML, CSS, JavaScript and JQuery, Python, and iOS mobile development with Swift"];
+  var dataText = [ "Experience in HTML, CSS, JavaScript and JQuery, Python, and iOS mobile development with Swift"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished

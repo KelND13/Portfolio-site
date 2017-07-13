@@ -20,43 +20,35 @@
       margin-left: 20px;
       float: left;
       font-size: 20px;
+      line-height: 16px;
+    }
+    #my-title {
+      font-size: 16px;
     }
     #title {
       font-family: PT Sans;
       color: #696969;
       margin-top: 30px;
       margin-left: 20px;
-      float: left;
       font-size: 18px;
+      float: left;
     }
-    #twitter {
+    .icon {
       width:60px;
       height:60px;
       border-radius:10px;
       float:left;
-      margin-right:40px;
-    }
-    #github {
-      width:60px;
-      height:60px;
-      border-radius:10px;
-      float:left;
-      margin-right:40px;
-    }
-    #linkedin {
-      width:60px;
-      height:60px;
-      border-radius:10px;
-      float:left;
-      margin-right:40px;
+      margin:30px;
     }
     #grid {
       float:left;
       width:100%;
       vertical-align: center;
-      padding:100px;
+      padding:20px;
       font-family: PT Sans;
       color: #696969;
+      text-align: center;
+      margin-top: 500px;
     }
     .projects {
       height:400px;
@@ -66,26 +58,27 @@
       margin: 25px;
     }
     #project-header: {
-      float:left;
-      width:100%;
-      vertical-align: center;
-      position: relative;
+      text-align: center;
     }
     #social-media {
-      font-family: PT Sans;
-      color:#FFFFFF;
       float:left;
-      width:100%;
-      vertical-align: center;
-      padding:200px;
+      width:50%;
+      padding:20px;
+      font-family: PT Sans;
+      color:#696969;
+      text-align: center;
+      margin:auto;
     }
     #contact {
       font-family: PT Sans;
-      color:#FFFFFF;
+      color:#696969;
       float:left;
       width:100%;
       vertical-align: center;
-      padding:200px;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
    </style>
 
@@ -96,6 +89,7 @@
 <div class="container" id="name">
   <div>
     <p>Kelly Dickerson</p>
+    <p id="my-title">Software engineer</p>
   </div>
 </div>
 
@@ -103,11 +97,10 @@
   <p id="animate"></p>
 </div>
 
-<div class="container">
-  <p id="project-header">Projects</p>
-</div>
 
 <div class="container" id="grid">
+
+  <p id="project-header">Projects</p>
 
     <div class="container projects">
       <a href="http://kellydickerson.me/php_projects/weather-site.php">
@@ -155,17 +148,25 @@
 
 <div class="container" id="social-media">
 
-  <div>
-    <a href="https://twitter.com/Kickerson13">
-      <img id="twitter" src="images/twitter.png" />
-    </a>
-    <a href="https://github.com/KelND13">
-      <img id="github" class="socialImage" src="images/github.png" />
-    </a>
-    <a href="https://www.linkedin.com/in/kelly-dickerson-9b043825?trk=nav_responsive_tab_profile_pic">
-      <img id="linkedin" class="socialImage" src="images/linkedin.jpg" />
-    </a>
-  </div>
+  <p>Contact</p>
+
+    <div class="container">
+      <a href="https://twitter.com/Kickerson13">
+        <img id="twitter" class="icon" src="images/twitter.png" />
+      </a>
+    </div>
+
+    <div class="container">
+      <a href="https://github.com/KelND13">
+        <img id="github" class="icon" src="images/github.png" />
+      </a>
+    </div>
+
+    <div class="container">
+      <a href="https://www.linkedin.com/in/kelly-dickerson-9b043825?trk=nav_responsive_tab_profile_pic">
+        <img id="linkedin" class="icon" src="images/linkedin.jpg" />
+      </a>
+    </div>
 
 </div>
 
