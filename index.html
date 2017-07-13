@@ -16,11 +16,11 @@
     #name {
       font-family: PT Sans;
       color: #696969;
-      margin-top: 30px;
-      margin-left: 20px;
-      float: left;
       font-size: 20px;
       line-height: 16px;
+      float:left;
+      margin:50px;
+      position: relative;
     }
     #my-title {
       font-size: 16px;
@@ -28,17 +28,16 @@
     #title {
       font-family: PT Sans;
       color: #696969;
-      margin-top: 30px;
-      margin-left: 20px;
       font-size: 18px;
-      float: left;
+      float:left;
+      margin:50px;
+      position: relative;
     }
     .icon {
       width:60px;
       height:60px;
       border-radius:10px;
-      float:left;
-      margin:30px;
+      margin:20px;
     }
     #grid {
       float:left;
@@ -53,21 +52,20 @@
     .projects {
       height:400px;
       width:400px;
-      border-radius: 5px;
       float: left;
       margin: 25px;
+    }
+    .round-edge: {
+      border-radius: 10px;
     }
     #project-header: {
       text-align: center;
     }
     #social-media {
-      float:left;
-      width:50%;
-      padding:20px;
       font-family: PT Sans;
       color:#696969;
-      text-align: center;
-      margin:auto;
+      float:left;
+      margin:30px;
     }
     #contact {
       font-family: PT Sans;
@@ -85,6 +83,28 @@
 </head>
 
 <body>
+
+<div class="container" id="social-media">
+
+    <div class="container icon">
+      <a href="https://twitter.com/Kickerson13">
+        <img id="twitter" src="images/twitter.png" />
+      </a>
+    </div>
+
+    <div class="container icon">
+      <a href="https://github.com/KelND13">
+        <img id="github" src="images/github.png" />
+      </a>
+    </div>
+
+    <div class="container icon">
+      <a href="https://www.linkedin.com/in/kelly-dickerson-9b043825?trk=nav_responsive_tab_profile_pic">
+        <img id="linkedin" src="images/linkedin.jpg" />
+      </a>
+    </div>
+
+</div>
 
 <div class="container" id="name">
   <div>
@@ -104,74 +124,52 @@
 
     <div class="container projects">
       <a href="http://kellydickerson.me/php_projects/weather-site.php">
-        <img id="biggerOne" src="images/lightning.jpg"/>
+        <img class="round-edge" id="biggerOne" src="images/lightning.jpg"/>
       </a>
       <h5><a href="http://kellydickerson.me/php_projects/weather-site.php">PHP Weather App</a></h5>
     </div>
 
     <div class="container projects">
       <a href="https://github.com/KelND13">
-        <img id="biggerTwo" src="images/whiskey.jpg"/>
+        <img class="round-edge" id="biggerTwo" src="images/whiskey.jpg"/>
       </a>
      <h5><a href="https://github.com/KelND13/AngelsShareTest">iOS Whiskey App</a><h5>
     </div>
 
     <div class="container projects">
       <a href="https://teamtreehouse.com/kellydickerson">
-        <img id="biggerThree" src="images/python.png"/>
+        <img class="round-edge" id="biggerThree" src="images/python.png"/>
       </a>
       <h5><a href="https://github.com/KelND13/MyTextAdventure">Text Adventure Game</a></h5>
     </div>
 
     <div class="container projects">
       <a href="http://kellydickerson.me/php_projects/weather-site.php">
-        <img id="biggerFour" src="images/bigrecord.png"/>
+        <img class="round-edge" id="biggerFour" src="images/bigrecord.png"/>
       </a>
       <h5><a href="https://github.com/KelND13/nodeScraper">Node Scraper</a></h5>
     </div>
 
     <div class="container projects">
       <a href="https://github.com/KelND13">
-        <img id="biggerFive" src="images/galaxy.jpg"/>
+        <img class="round-edge" id="biggerFive" src="images/galaxy.jpg"/>
       </a>
      <h5><a href="https://github.com/KelND13/quizScraper">Python Web Scraper</a><h5>
     </div>
 
     <div class="container projects">
       <a href="https://teamtreehouse.com/kellydickerson">
-        <img id="biggerSix" src="images/green-circuit.jpg"/>
+        <img class="round-edge" id="biggerSix" src="images/green-circuit.jpg"/>
       </a>
       <h5><a href="https://teamtreehouse.com/kellydickerson">Treehouse CourseworkK</a></h5>
     </div>
 
 </div>
 
-<div class="container" id="social-media">
-
-  <p>Contact</p>
-
-    <div class="container">
-      <a href="https://twitter.com/Kickerson13">
-        <img id="twitter" class="icon" src="images/twitter.png" />
-      </a>
-    </div>
-
-    <div class="container">
-      <a href="https://github.com/KelND13">
-        <img id="github" class="icon" src="images/github.png" />
-      </a>
-    </div>
-
-    <div class="container">
-      <a href="https://www.linkedin.com/in/kelly-dickerson-9b043825?trk=nav_responsive_tab_profile_pic">
-        <img id="linkedin" class="icon" src="images/linkedin.jpg" />
-      </a>
-    </div>
-
-</div>
-
 
 <div class="container" id="contact">
+
+  <p>Get in touch</p>
 
   <div>
 
