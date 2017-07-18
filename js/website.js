@@ -186,7 +186,7 @@ var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 // Set the canvas width and height to occupy full window
-var W = window.innerWidth, H = 300;
+var W = 2000, H = 300;
 canvas.width = W;
 canvas.height = H;
 
@@ -365,5 +365,6 @@ function animloop() {
 
 animloop();
 
+$("img.lazy").lazyload();
 
 
